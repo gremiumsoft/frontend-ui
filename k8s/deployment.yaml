@@ -23,7 +23,7 @@ spec:
     app: frontendui
   spec:
    containers:
-    - image: gremiumsoft/frontend-ui:latest
+    - image: gremiumsoft/frontendui:latest
       imagePullPolicy: Always
       name: frontendui
       resources:
