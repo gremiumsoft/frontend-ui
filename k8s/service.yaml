@@ -4,12 +4,12 @@ metadata:
   name: frontendui-service
   namespace: default
   labels:
-    app: frontnedui
+    app: frontendui
 spec:
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
   selector:
-    app: frontnedui
+    app: frontendui
   type: NodePort

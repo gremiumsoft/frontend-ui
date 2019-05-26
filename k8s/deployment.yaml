@@ -4,14 +4,14 @@ metadata:
  annotations:
   deployment.kubernetes.io/revision: '1'
  labels:
-  app: frontnedui
- name: frontnedui
+  app: frontendui
+ name: frontendui
  namespace: default
 spec:
  replicas: 1
  selector:
   matchLabels:
-   app: frontnedui
+   app: frontendui
  strategy:
   type: RollingUpdate
   rollingUpdate:
@@ -20,12 +20,12 @@ spec:
  template:
   metadata:
    labels:
-    app: frontnedui
+    app: frontendui
   spec:
    containers:
     - image: gremiumsoft/frontend-ui:latest
       imagePullPolicy: Always
-      name: frontnedui
+      name: frontendui
       resources:
         limits:
           memory: 128Mi
